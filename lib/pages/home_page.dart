@@ -1,3 +1,4 @@
+import 'package:bank_nation/pages/task_two.dart';
 import 'package:flutter/material.dart';
 
 class HomePage extends StatefulWidget {
@@ -87,7 +88,12 @@ class _HomePageState extends State<HomePage> {
                         RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(50.0),
                     ))),
-                onPressed: () {},
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => TaskTwo()),
+                  );
+                },
                 child: Text("SIGUIENTE"),
               ),
             ),
